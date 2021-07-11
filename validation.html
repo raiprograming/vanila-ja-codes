@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <hea>
+        <script type="text/javascript">
+          function chk()
+          {
+              if(document.getElementById("un").value.length>=6 && document.getElementById("pw").value.length>=6)
+              {
+                  document.getElementById("btn").disabled=false;
+              }
+              else{
+                  document.getElementById("btn").disabled=true;
+              }
+
+          }
+        
+        </script>
+    </head>
+    <body>
+        <input type="text" id="un" onblur="chk()"><br>
+        <input type="text" id="pw" onblur="chk()"><br>
+        <button id="btn">cubmit</button>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            var dt=new Date();
+            function show()
+            {
+                //document.write("in function show");
+                document.getElementById("dt").value=dt.getDate();
+                document.getElementById("tm").value=dt.getHours();
+                document.getElementById("yr").value=dt.getFullYear();
+                document.getElementById("dy").value=dt.getDay();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>following is all about date</h1>
+            <br>
+            date= <input id="dt"><br>
+            time=<input id="tm"><br>
+            year=<input id="yr"><br>
+            day=<input id="dy"><br>
+            <h5>click button below  to get the information</h5>
+            <button onclick="show()">show</button>
+        </div>
+    </body>
+</html>
